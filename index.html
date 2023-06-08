@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Врачи - Центр тазобедренного сустава</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://centertbs.ru/wp-content/uploads/2023/02/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://centertbs.ru/wp-content/uploads/2023/02/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://centertbs.ru/wp-content/uploads/2023/02/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://centertbs.ru/wp-content/uploads/2023/02/cropped-favicon-270x270.png" />
+</head>
+<body>
+    <header class="full_header">
+        <input type="checkbox" id="nav_check" for="nav_check_2" hidden>
+        <div class="header_left_side">
+            <img src="./all/logo_mob.svg" class="mobile_logo" id="nav_check_2">
+            <img src="./all/logo.svg" id="toggleMenu"  class="main_logo" >
+            <span class="work_time">
+                Время работы:<br>пн-вс 8:00-20:00
+            </span>
+        </div>
+
+        <nav class="nav_bar">
+            <div class="dropdown_first_block">
+                <span class="dropdown-trigger" onclick="toggleDropdown(this)">О центре<img src="./all/Icons/arrow.svg" class="arrow_header"></span>
+                <div class="dropdown-content">
+                    <div class="dropdown_first">
+                        <a href="/o-tsentre/">О центре</a>
+                        <a href="/foto-i-video/">Фото и видео</a>
+                        <a href="/dlya-smi/">Для СМИ</a>
+                        <a href="/chasto-zadavaemye-voprosy/">Частые вопросы</a>
+                        <a href="/preimuschestva-lecheniya-v-klinike-v-moskve/">Преимущества</a>
+                        <a href="/vacancy/">Вакансии</a>
+                        <a href="/yuridicheskaya-informaciya/">Юридическая информация</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/doctors/"><span class="dropdown_doctors">Врачи </span></a>
+            <div class="dropdown">
+                <span class="dropdown-trigger" onclick="toggleDropdown(this)" >Патологии ТБС <img src="./all/Icons/arrow.svg" class="arrow_header"></span>
+                <div class="dropdown-content">
+                    <a href="/patologii-tbs/asepticheskiy-nekroz/">Асептический некроз головки ТБС</a>
+                    <a href="/patologii-tbs/deformiruushii-koksartroz/">Коксартроз тазобедренного сустава 2 степени</a>
+                    <a href="/patologii-tbs/koksartroz-2-stepeni/">Коксартроз тазобедренного сустава</a>
+                    <a href="/patologii-tbs/koksartroz-3-stepeni/">Коксартроз тазобедренного сустава 3 степени</a>
+                    <a href="/patologii-tbs/koksartroz-4-stepeni/">Коксартроз тазобедренного сустава 4 степени</a>
+                    <a href="/patologii-tbs/displastichesky-koksartroz/">Диспластический коксартроз</a>
+                    <a href="/patologii-tbs/lozhnyy-sustav-sheyki/">Ложный сустав шейки бедренной кости</a>
+                    <a href="/patologii-tbs/perelom/">Перелом шейки ТБС</a>
+                    <a href="/patologii-tbs/chrezvertelnyy-perelom/">Чрезвертельный перелом тазобедренного сустава</a>
+                    <a href="/patologii-tbs/razryv-acetabulyatornoy-guby/">Разрыв ацетабулярной губы ТБС</a>
+                    <a href="/patologii-tbs/trohanterit/">Трохантерит ТБС</a>
+                    <a href="/patologii-tbs/osteoporoz/">Остеопороз</a>
+                    <a href="/patologii-tbs/hip-spine-sindrom/">Хип-спайн синдром</a>
+                    <a href="/patologii-tbs/oslojneniya/">Осложнения после эндопротезирования ТБС</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span class="dropdown-trigger" onclick="toggleDropdown(this)">Лечение ТБС <img src="./all/Icons/arrow.svg" class="arrow_header"></span>
+                <div class="dropdown-content">
+                    <a href="/lechenie-tbs/pervichnoe-endoprotezirovanie/">Первичное эндопротезирование ТБС</a>
+                    <a href="/lechenie-tbs/reivizionnoe-endoprotezirovanie-tbs/">Ревизионное эндопротезирование тазобедренного сустава</a>
+                    <a href="/lechenie-tbs/artroskopiya/">Артроскопия Тазобедренного сустава</a>
+                    <a href="/lechenie-tbs/infektsionnye-zabolevaniya/">Лечение инфекционных заболеваний ТБС</a>
+                    <a href="/lechenie-tbs/osteotomia/">Остеотомия ТБС при дисплазии</a>
+                    <a href="/lechenie-tbs/osteosintez/">Остеосинтез при переломе шейки ТБС</a>
+                    <a href="/lechenie-tbs/periazetabularnaya-osteotomiya/">Периацетабулярная остеотомия ТБС</a>
+                    <a href="/lechenie-tbs/ukreplenie-myshechnogo-karkasa/">Укрепление мышечного каркаса</a>
+                    <a href="/lechenie-tbs/fizioprozedury/">Физиопроцедуры</a>
+                    <a href="/lechenie-tbs/uluchenie-tsirkulyatsii-krovoobracheniya/">Улучшение циркуляции кровообращения</a>
+                    <a href="/lechenie-tbs/mazi-i-tabletki/">Нестероидные противоспалительные мази или таблетки</a>
+                    <a href="/lechenie-tbs/snijenie-vesa/">Снижение веса</a>
+                    <a href="/lechenie-tbs/trosty-kostyly/">Разгрузка сустава при использовании трости или костылей</a>
+                    <a href="/lechenie-tbs/reabilitatsionnyy-kurs/">Реабилитационный курс</a>
+                    <a href="/lechenie-tbs/tsentr-detskogo-zdorovya/">Центр детского здоровья</a>
+                </div>
+            </div>
+            <a href="/stoimost/"><span class="mini_dropdown">Стоимость</span></a>
+            <a href="/otzivi/"><span class="mini_dropdown">Отзывы</span> </a>
+            <a href="/kontakty/"><span class="mini_dropdown">Контакты</span> </a>
+            <span class="time_mini_dropdown">Время работы: пн-вс 8:00-20:00</span>
+        </nav>
+        <label for="nav_check"  class="hamburger">
+            <div class="hamburger_line_1"><img src="./all/burger.svg"></div>
+            <div class="hamburger_line_2"><img src="./all/burger_close.svg"></div>
+        </label>
+    </header>
+    <div class="main_container">
+        <div class="main_block">
+            <span class="main_first_line">
+                Замена тазобедренного сустава <br class="break_main"> с ускоренной реабилитацией
+            </span>
+            <span class="main_second_line">
+                Центр хирургии доктора Ерёмина Ивана Константиновича
+            </span>
+        </div>
+        <div class="main_block_photo">
+            <img src="./all/photo/1%20Photo.png">
+        </div>
+    </div>
+    <div class="about_block">
+        <div class="about_center">
+            <span class="about">О центре</span>
+            <span class="about_first_block">Центр Тазобедренного Сустава — это лучшие мировые и российские технологии диагностики и лечения тазобедренного сустава для быстрого восстановления после перелома или заболевания.</span>
+            <span class="about_second_block">Инновационный метод замены прямого сустава без повреждений сухожилий и мышц тазобедренного сустава. Используем самые современные металлоконструкции, выполнили уже более 2 000 операций по эндопротезированию. Владеем методикой FDA.
+            Восстановление в течение 1 дня и возврат к обычному образу жизни.</span>
+        </div>
+        <div class="advantages_block" id="scroll-container">
+            <span class="about_advantages">Преимущества</span>
+            <div class="about_container" id="scroll-content">
+                <div class="column">
+                    <span class="about_gray_line">1 день</span>
+                    <span class="about_black_line">Восстановление от <br> операции до активности</span>
+                </div>
+                <div class="column">
+                    <span class="about_gray_line">2000</span>
+                    <span class="about_black_line">Операций выполняется <br> ежегодно</span>
+                </div>
+                <div class="column">
+                    <span class="about_gray_line">11 лет</span>
+                    <span class="about_black_line">Опыт работы <br> лечения ТБС</span>
+                </div>
+                <div class="column">
+                    <span class="about_gray_line">12</span>
+                    <span class="about_black_line">Высококвалифицированных <br> хирургов-экспертов по ТБС</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info_block">
+        <span class="info_main">Инновационный метод лечения <br class="break"> через прямой передний доступ</span>
+        <div class="info_container">
+            <span class="info_main_first">01</span>
+            <span class="info_main_second">Без разрезов мышц  и сухожилий, без боли <img src="./all/Icons/arrow.svg" class="arrow_block"></span>
+            <span class="info_main_third">При помощи прямого доступа хирург не рассекает мышцы, а проходит в межмышечном промежутке до сустава, разводя их без повреждений.
+            После операции невидимый рубец 7-8 см в длину.</span>
+            <span class="info_main_first">02 </span>
+            <span class="info_main_second">Быстрое восстановление <img src="./all/Icons/arrow.svg" class="arrow_block" id="arrow_reverse"  ></span>
+            <span class="info_main_third" for="arrow_reverse">На следующий день после операции пациент возвращается к полноценной активной жизни без ходунков, костылей и без перекоса таза.
+            В течение недели восстанавливается правильная походка, нормализуется амплитуда движения и исчезает хромота.</span>
+            <span class="info_main_first">03</span>
+            <span class="info_main_second">Fast Track Recovery <img src="./all/Icons/arrow.svg" class="arrow_block"></span>
+            <span class="info_main_third" >Fast track recovery, или хирургия ускоренной реабилитации — это самый современный подход к послеоперационному этапу, который позволяет максимально сократить период реабилитации пациента, при этом значительно улучшив качество его жизни.
+                <br> <br>В основе FTR лежит информированность пациентов о ходе лечения и их мотивация в успешном исходе лечения и скорейшем выздоровлении, а также индивидуальный комплекс мер, результатом которых является устойчивое снижение стрессовых реакций организма и сокращение времени пребывания в больнице.</span>
+            </div>
+        </div>
+        <div>
+            <div class="work_container">
+                <div class="work_block">Порядок работы</div>
+                <div class="work_table">
+                    <span class="first_work">Персональное сопровождение и консультация</span>
+                    <img src="./all/arrow.svg">
+                    <span>Предоперационное обследование и госпитализация</span>
+                    <img src="./all/arrow.svg" class="reverse_arrow">
+                    <span>Операция</span>
+                    <img src="./all/arrow.svg">
+                    <span class="last_work">Послеоперационная реабилитация и сопровождение</span>
+                </div>
+            </div>
+        </div>
+        <div class="what_if_container">
+            <div class="what_if_block">
+                <span class="what_if_main">Если вовремя не заменить тазобедренный сустав</span>
+                <div class="what_if_table">
+                    <div class="column_what_if">
+                        <span class="what_if_number">01</span>
+                        <span class="what_if_line">Снижение качества жизни
+                        и инвалидизация из-за боли. Отсутствие прежней подвижности</span>
+                    </div>
+                    <div class="column_what_if">
+                        <span class="what_if_number">02</span>
+                        <span class="what_if_line">Постоянная ежедневная боль
+                        в суставе при бытовой активности</span>
+                    </div>
+                    <div class="column_what_if">
+                        <span class="what_if_number">03</span>
+                        <span class="what_if_line">Регулярное использование обезболивающих средств, вызывающих осложнения</span>
+                        <br>
+                    </div>
+                    <div class="column_what_if">
+                        <span class="what_if_number">04</span>
+                        <span class="what_if_line">Долгая и опасная реабилитация, приводящая к большим длительным операциям, психологическому
+                        и физическому дискомфорту</span>
+                    </div>
+                </div>
+            </div>
+            <div class="what_if_picture">
+                <img src="./all/photo/2%20Photo.png" class="what_if_doctor">
+                <img src="./all/photo/4%20Photo.png" class="what_if_doctor_table">
+            </div>
+
+        </div>
+        <div class="feedback_container">
+            <div class="feedback_text">
+                <span class="feedback_first">Оставьте заявку на консультацию</span>
+                <br>
+                <span class="feedback_second">С вами свяжется наш специалист</span>
+            </div>
+            <form id="myForm" class="feed_back_form" novalidate>
+                <img src="./all/photo/3%20Photo.png" class="form_image">
+                <div class="full_form">
+                  <div class="full_form_name">
+                      <div>
+                    <label for="name"class="form_fullname"><span class="form_your_name">Ваше имя:</span></label>
+                      </div>
+                      <input type="text" id="name" placeholder="Ваше имя :" required class="form_name" name="name">
+                  </div>
+                  <div>
+                    <div>
+                      <label for="phoneNumber" class="form_phone_number"><span class="form_number">Номер телефона:</span></label>
+                    </div>
+                    <input type="text" id="phoneNumber" placeholder="Номер телефона :" required class="form_phone" name="phoneNumber">
+                  </div>
+                  <div class="accept_block">
+                    <input type="checkbox" class="form_checkbox" id="acceptCheckbox" required>
+                      <label for="acceptCheckbox" class="form_custom_checkbox"></label>
+                      <div class="accept_box">
+                      <span class="form_accept_first">Я подтверждаю свое согласие с условиями </span>
+                      <span class="form_accept_second">Пользовательского соглашения</span>
+                    </div>
+                    <input type="submit" value="Отправить" class="form_button">
+
+                  </div>
+                </div>
+              </form>
+        </div>
+        <div class="bot_container">
+            <div class="footer_left_block">
+                <img src="./all/logo.svg">
+                <span class="bot_work_time">
+                    Время работы:
+                    <br>пн-вс 8:00-20:00
+                </span>
+                <span class="bot_politics"> © 2023 TBS Surgery Center</span>
+            </div>
+            <div class="footer_right_block">
+                <div class="footer_tg" onclick="goToLink('https://t.me/doctoreremin')">
+                    <img src="./all/Icons/TG.svg">
+                    <span >Telegram</span>
+                </div>
+                <div class="footer_wa" onclick="goToLink('https://api.whatsapp.com/send?phone=79771770303')">
+                    <img src="./all/Icons/WA.svg">
+                    <span >WhatsApp</span>
+                </div>
+                <div class="footer_email" onclick="goToLink('mail@centertbs.ru')">
+                    <img src="./all/Icons/Mail.svg">
+                    <span >Почта</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="footer_politics">Политика конфединциальности<br> © 2023 TBS Surgery Center</span>
+            <div class="footer_right">
+                <span class="footer_info">Сайт носит информационный характер,<br> мы рекомендуем обратиться на очную <br>консультацию к врачу</span>
+                <span class="footer_phone_number">8 (495) 149-65-20</span>
+            </div>
+        </footer>
+    </body>
+    </html>
